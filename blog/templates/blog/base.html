@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Blog</title>
+</head>
+<body>
+    <h1>Simple Blog</h1>
+    <nav>
+        <a href="{% url 'index' %}">Home</a>
+        <a href="{% url 'new_post' %}">New Post</a>
+    </nav>
+    <hr>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
